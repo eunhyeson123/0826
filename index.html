@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                 
+        #wrapper {
+             width: 1100px;
+             margin: 0 auto;
+         } 
+ 
+         header {
+             width: 100%;
+             height: 220px;
+             background-color: #fff;
+             background-image: url(images/tourlog.png);
+             background-size: 150px;
+             background-repeat: no-repeat;
+             background-position: left center;  
+
+             /* border: 1px solid black;  */
+ 
+         } 
+
+
+         .search {
+           float: right;
+           max-width: 250px;           
+           position: relative;
+        }
+
+         .search-form {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 30px;
+          padding: 5px 15px;
+          background: #fff;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+#search-input {
+  flex-grow: 1;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border: none;
+  background: transparent;
+  padding-left: 15px;
+}
+
+.search-btn {
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+  cursor: pointer;
+  background: #007bff;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.search-btn:hover {
+  background: blueviolet;
+}
+         
+ 
+         nav {
+             margin-top: 120px;
+             margin-left: 230px;
+             float: left;
+        }
+ 
+         ul {
+             list-style: none;
+             margin: 0;
+             padding: 0;
+         }
+ 
+         li {
+             color: black;
+             font-weight: 500;
+             font-size: 14px;
+             width: 100px;
+             margin: 2px;
+             float: left;
+         }
+         h1{
+             font-size: 20px;
+             font-weight: 800;
+             text-align: center;            
+         }
+     
+         article {
+            
+             width: 300px;
+             height: 300px;
+             border: 1px solid #ddd;
+             float: left;
+             color: #333;
+             margin: 0px 60px 60px 0;
+             box-sizing: border-box;
+             font-size: 15px;
+             font-weight: 600;
+                                    
+         }
+       
+         article img {
+          width: 300px;
+          height: 300px;
+          transition: transform ease-in-out 0.2s;
+          }
+ 
+         article img:hover {
+         transform: scale(1.1);
+          }
+          
+          #boxA{
+             padding-bottom: 500px;
+          }
+ 
+          #boxB{
+             padding-bottom: 600px;
+          }
+          #boxC{
+             padding-bottom: 600px;
+          }
+          
+         
+ 
+ 
+ 
+      
+ </style>
+     
+      <head>
+             
+ 
+         
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+ 
+     <script>
+         $(function(){
+     $('.bxslider').bxSlider({
+       mode: 'fade',
+       captions: false,
+       slideWidth: 900
+ 
+ 
+     });
+   });
+ 
+ 
+     </script>
+ 
+ 
+ <script>
+    $(function(){
+$('.bxslider2').bxSlider({
+minSlides: 2,
+maxSlides: 4,
+slideWidth: 350,
+slideMargin: 10,
+ticker: true,
+speed: 45000
+});
+
+
+
+
+
+
+
+});
+
+
+</script>
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li>BEST</li>
+                    <li>국내여행</li>
+                    <li>해외패키지</li>
+                    <li>항공</li>
+                    <li>호텔</li>
+                    <li>SandS</li>
+
+                </ul>
+            </nav>
+            <div class="search">
+                <form class="search-form" action="https://www.google.com/search" method="get">
+                  <!-- <label for="search-input" class="visually-hidden"></label> -->
+                  <input type="search" id="search-input" name="q" placeholder="지금 어디로  떠날까?">
+                  <button type="submit" class="search-btn"><span>검색</span></button>
+                </form>
+              </div>
+                
+        </header>
+        
+ <section>
+
+        <div class="bxslider">
+             
+               <div><img src="images/slider1.jpg" title="베네치아"/></div>
+               <div><img src="images/slider2.jpg" title="퀘백"/></div>
+               <div><img src="images/slider3.jpg" title="방콕"/></div>
+        </div>
+        <br><br>
+
+    
+        
+        <h1>인기 여행지 BEST10</h1><br><br>
+        
+        <div id="boxA">
+
+            <article><img src="images/a1.jpg" alt="파리" width="300" height="300">
+                <p>[서유럽 3국] 프랑스, 이탈리아, 스페인 8~10일
+                #대한항공직항 #센느강유람선  #맛집투어 <br>5,290,000원~ </p>
+            </article>
+            <article><img src="images/a2.jpg" alt="몽골" width="300" height="300">
+               <p>[몽골 5일] #전통게르 #초원승마 #노마딕체험 <br>
+                1,390,000원~</p> 
+            </article>        
+            <article><img src="images/a3.png" alt="보홀" width="300" height="300">
+                <p>[보홀 자유여행 5일] #벨뷰 리조트 #디럭스룸<br>
+                    959,000원~</p>
+            </article>
+        </div>
+
+
+        
+
+            <h1>Only 참새투어! 단독 할인 프로모션</h1><br><br><br> 
+            <div id="boxB">
+
+                <article><img src="images/b1.jpg" alt="동유럽" width="300" height="300">
+                    <p>[동유럽/발칸6국12일] 
+                        체코/오스트리아/독일/헝가리/크로아티아/슬로베니아
+                        #전일4성호텔 #프라하/두브로브니크 FULL DAY 투어<br>
+                         <s>3,330,500원~</s><br><font color="green" size="5">16%</font><font size="4"> 3,309,900원~</font><br><font size="2">★ 4.7 (222건)</font></p>
+                </article>   
+                <article><img src="images/b2.jpg" alt="나트랑" width="300" height="300">
+                   <p>[나트랑/달랏 4박 5일] 
+                    나트랑+달랏 패키지 랑비엥짚차+마사지60분포함 <br>
+                    <s>643,900원~</s><br><font color="green" size="5">28%</font><font size="4"> 463,608원~</font><br><font size="2">★ 4.2 (352건)</font></p>
+                </article>        
+                <article><img src="images/b3.jpg" alt="호주" width="300" height="300"> 
+                    <p>[출발확정 호주 9일]
+                        코시드니/멜버른/골드코스트 8~9일#항공일주 #호주여행마스터<br>
+                        <s>3,863,380원~</s><br><font color="green" size="5">23%</font><font size="4"> 3,209,500원~</font><br><font size="2">★ 4.7 (152건)</font></p>
+                </article>
+                
+              </div>
+              <div id="boxC">
+
+                <article><img src="images/C1.jpg" alt="홍콩" width="300" height="300">
+                    <p>[대한항공/홍콩 자유여행2박3일] 구룡반도_하버프라자8도/
+                        워킹투어 선택가능<br>
+                         <s>769,000원~</s><br><font color="green" size="5">13%</font><font size="4"> 723,900원~</font><br><font size="2">★ 4.8 (422건)</font></p>
+                </article>   
+                <article><img src="images/c2.jpg" alt="오사카" width="300" height="300">
+                   <p>[추석연휴 출발확정!] 오사카+우지+교토+나라+고베  오전 4일
+                    나라+교토+고베+우지까지 모두 포함!! 오사카성도 포함!<br>
+                    <s>1,233,000원~ </s><br><font color="green" size="5">18%</font><font size="4"> 1,099,000원~</font><br><font size="2">★ 4.5 (248건)</font></p>
+                </article>        
+                <article><img src="images/c3.jpg" alt="호주" width="300" height="300"> 
+                    <p>[대만 첫여행 추천] 화련/시내/필수관광 꽉!채운 4일
+                        # 대만이 처음이시면 이상품은 어떠세요?<br>
+                        <s>678,900원~</s><br><font color="green" size="5">23%</font><font size="4"> 555,000원~</font><br><font size="2">★ 4.7 (152건)</font></p>
+                </article>
+                
+              </div>
+
+              
+
+              
+            
+
+
+
+            <div class="bxslider2">
+             
+                <div><img src="images/card1.jpg" title="현대카드"/></div>
+                <div><img src="images/card2.jpg" title="비행기"/></div>
+                <div><img src="images/card3.jpg" title="선물"/></div>
+                <div><img src="images/card4.jpg" title="호텔"/></div>
+         </div>
+          
+
+
+
+            <aside>
+            </aside>              
+                          
+ </section>
+
+
+        <footer>
+            <address></address>
+        </footer>
+</div>
+
+
+</body>
+</html>

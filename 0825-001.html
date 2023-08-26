@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엘라스틱 메뉴</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background: #f1f1f1;
+        }
+
+        .navi {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 40px;
+        }
+
+        .navi > li {
+            float:left;
+            position: relative;
+            line-height: 40px;
+            background: #8ac007;
+        }
+
+        .navi > li > a {
+            display: block;
+            padding: 5px 60px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+
+        }
+
+        .navi li ul {
+            position: absolute;
+            left:0;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background: #fff;
+            opacity: 0;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+
+        .navi li:hover ul {
+            opacity: 1;
+        }
+
+        .navi li ul li {
+            padding: 0;
+            height: 0;
+            line-height: 0;
+            border-bottom: none;
+            opacity: 0;
+            transition: 0.2s;
+        }
+
+        .navi li:hover ul li {
+            padding-bottom: 10px;
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 1px dotted #ccc;
+            opacity: 1;
+        }
+
+        .navi li ul li a {
+            display: block;
+            padding: 5px 60px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #333;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Pure CSS Elastic Menu</h1>
+        <ul class="navi">
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a>
+                <ul>
+                    <li><a href="#">menu0201</a></li>
+                    <li><a href="#">menu0202</a></li>
+                    <li><a href="#">menu0203</a></li>
+                    <li><a href="#">menu0204</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu03</a>
+                <ul>
+                    <li><a href="#">menu0301</a></li>
+                    <li><a href="#">menu0302</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu04</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+​
